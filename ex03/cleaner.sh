@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sed 's/[^,] Data Scientist[^\"]\+//' hh_sorted.csv > hh_positions.csv;
+sed -e 's/\(.*\)/\L\1/' hh_sorted.csv | sed -e 's/ data scientist[^,]\+/\"/' > hh_positions.csv;
 
 

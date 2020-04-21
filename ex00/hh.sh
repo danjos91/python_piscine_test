@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl -H 'User-Agent: api-test-agent' 'https://api.hh.ru/vacancies?text=$1&items_on_page=20' -o hh.json
+curl -H 'User-Agent: api-test-agent' "https://api.hh.ru/vacancies?area=113&text=$1+$2+$3+$4&items_on_page=20" > hh.json;
