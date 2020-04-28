@@ -1,2 +1,0 @@
-# python_piscine_test
-python_data_base_test
